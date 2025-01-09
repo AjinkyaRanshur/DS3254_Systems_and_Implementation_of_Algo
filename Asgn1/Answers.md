@@ -1,21 +1,23 @@
-# Specifications of Asus ROG Strix G17 G713RC-HX020W
+# Q  Find the specifications of your laptop/PC. Give as many details as possible.(CPU, Cores, Hyperthreading, GPU, Cache, RAM, Storage, Capacity, Frequency, Power consumption, Battery, ...)
 
-- **Processor**: AMD Ryzen 7 6800H
-- **Graphics Card**: NVIDIA GeForce RTX 3050 (4 GB GDDR6 VRAM)
-- **Display**: 17.3-inch Full HD (1920x1080), 144Hz refresh rate
-- **RAM**: 16 GB DDR5 (expandable up to 32 GB)
-- **Storage**: 512 GB PCIe Gen4 SSD
+- **Name Of The Laptop**:HP Victus
+- **Processor**: AMD Ryzen7 5800H (up to 4.4 GHz max boost clock(2i), 16 MB L3 cache, 8 cores, 16 threads)
+- **Graphics Card**: NVIDIA GeForce RTX 3050 Laptop GPU(4 GB GDDR6 dedicated)
+- **Display**:  15.6 inch diagonal, FHD, 144 Hz, 9 ms response time, micro-edge, anti-glare, 250 nits, 141 ppi
+- **RAM**: 6 GB DDR4-3200 MHz RAM (2 x 8 GB)
+- **Storage**: 512 GB PCIe NVMe TLC 4x4 SSD
 - **Operating System**: Windows 11 Home
 - **Cooling**: ROG Intelligent Cooling with liquid metal thermal compound
 - **Connectivity**:
-  - Wi-Fi 6
+  - Wi-Fi 6 MT7921 (2x2)
   - Bluetooth 5.2
-  - USB 3.2 Gen 1 Type-A and Type-C ports
-  - HDMI 2.0b
-- **Audio**: Dolby Atmos with Smart Amp Technology
-- **Battery**: 90Wh battery with fast charging support
+  - USB  USB Type-C 5Gbps signaling rate,1 SuperSpeed USB Type-A 5Gbps signaling rate, 1 SuperSpeed USB Type-A 5Gbps signaling rate and 1 RJ-45
+  - HDMI 2.1
+- **Audio**: Audio by B&O(Quality Average)
+- **Battery**: 70Wh battery with fast charging support
+- **Camera**:HP Wide Vision 720p HD camera with temporal noise reduction and integrated dual array digital microphones
 - **Build**: Sleek design with customizable RGB lighting (Aura Sync)
-- **Weight**: 2.9 kg
+- **Weight**: 2.37 kg
 
 ---
 
