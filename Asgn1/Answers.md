@@ -23,18 +23,23 @@
 
 # How would you select a new laptop or PC if you were buying one?(Gaming, Graphic designer, Video editing, physics simulation ...)
 
-The main use of my laptop will be to run theoretical and machine learning models built for research and additionally I would also like to game on it once in a while.The current features provided by my laptop are satisfying but it lacks in four essential things that I wish my new laptop will fulfill.These four things are:
+The main use of my laptop will be to run theoretical and machine learning models built for research, and additionally, I would also like to game on it occasionally. The current features provided by my laptop are satisfying, but it lacks four essential things that I wish my new laptop would fulfill. These four things are:
 
-## 1.**Battery Life**
-    - My current laptop only lasts for 2 hours on a full charge which is a little inconvinient because I need to keep it connected to a charger for tasks which require a greater duration of time
-## 2.**Storage**
-    - The current storage is 512 gb and this laptop only has one slot thus I need to buy a 1tb ssd for upgrading it which is very costly. I require more storage because good quality games and software often require approximately 40gb worth of storage
-## 3.**Build**
-    - The current build of this laptop feels very cheap because of the use of alumminium metal and due to this small forces(indirect) applied on the laptop also causes the screen to shake violently which is very annoying while working
-## 3.**Cooling**
-    - The current cooling system although better than average takes a lot of time to cool the laptop under heavy workload
+## 1. **Battery Life**
+- My current laptop only lasts for 2 hours on a full charge, which is inconvenient because I need to keep it connected to a charger for tasks requiring longer durations.
 
-Thus while keeping these factors in my mind and finding something that has better features than my exisiting laptop I would choose:
-1.Dell G15 5515 (2021) - (Ryzen 7 5800H/3060 110-125W) 86Wh (If on a budget)
-2.ASUS Zephyrus G16 (2024) - (Ryzen AI 9 HX 370/4070 8GB 95-105W) 90Wh (If you have enough money)
+## 2. **Storage**
+- The current storage is 512 GB, and this laptop only has one slot. Upgrading it to a 1 TB SSD is very costly. I require more storage because high-quality games and software often need approximately 40 GB of storage each.
+
+## 3. **Build**
+- The current build of this laptop feels very cheap due to the use of aluminum metal. This causes small indirect forces applied to the laptop to make the screen shake violently, which is very annoying while working.
+
+## 4. **Cooling**
+- The current cooling system, although better than average, takes a lot of time to cool the laptop under heavy workloads.
+
+Thus, while keeping these factors in mind and finding something that has better features than my existing laptop, I would choose:
+
+1. **Dell G15 5515 (2021)** - (Ryzen 7 5800H/RTX 3060 110-125W) 86Wh (If on a budget)
+2. **ASUS Zephyrus G16 (2024)** - (Ryzen AI 9 HX 370/RTX 4070 8GB 95-105W) 90Wh (If budget allows)
+
 
