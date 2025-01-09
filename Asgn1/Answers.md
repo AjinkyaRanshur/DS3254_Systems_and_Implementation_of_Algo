@@ -26,13 +26,13 @@
 The main use of my laptop will be to run theoretical and machine learning models built for research and additionally I would also like to game on it once in a while.The current features provided by my laptop are satisfying but it lacks in four essential things that I wish my new laptop will fulfill.These four things are:
 
 ## 1.**Battery Life**
-    -My current laptop only lasts for 2 hours on a full charge which is a little inconvinient because I need to keep it connected to a charger for tasks which require a greater duration of time
+    - My current laptop only lasts for 2 hours on a full charge which is a little inconvinient because I need to keep it connected to a charger for tasks which require a greater duration of time
 ## 2.**Storage**
-    -The current storage is 512 gb and this laptop only has one slot thus I need to buy a 1tb ssd for upgrading it which is very costly. I require more storage because good quality games and software often require approximately 40gb worth of storage
+    - The current storage is 512 gb and this laptop only has one slot thus I need to buy a 1tb ssd for upgrading it which is very costly. I require more storage because good quality games and software often require approximately 40gb worth of storage
 ## 3.**Build**
-    -The current build of this laptop feels very cheap because of the use of alumminium metal and due to this small forces(indirect) applied on the laptop also causes the screen to shake violently which is very annoying while working
+    - The current build of this laptop feels very cheap because of the use of alumminium metal and due to this small forces(indirect) applied on the laptop also causes the screen to shake violently which is very annoying while working
 ## 3.**Cooling**
-    -The current cooling system although better than average takes a lot of time to cool the laptop under heavy workload
+    - The current cooling system although better than average takes a lot of time to cool the laptop under heavy workload
 
 Thus while keeping these factors in my mind and finding something that has better features than my exisiting laptop I would choose:
 1.Dell G15 5515 (2021) - (Ryzen 7 5800H/3060 110-125W) 86Wh (If on a budget)
