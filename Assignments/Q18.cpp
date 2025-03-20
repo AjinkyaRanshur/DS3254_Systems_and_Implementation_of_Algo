@@ -90,6 +90,10 @@ public:
     void preOrderTraversal() {
         preOrderHelper(root);
     }
+    
+    void inorder(){
+	inorder(root);
+	}
 
 private:
     // Helper function to free memory recursively
@@ -113,6 +117,26 @@ private:
         // Traverse the right subtree
         preOrderHelper(node->right);
     }
+	
+    void inorder(Node* node){
+ 	if (node == nullptr) return;	
+	inorder(node->left);
+	cout<< node->data<<" ";
+	inorder(node->right);
+
+	}
+	
+    void postorder(Node* node){	
+	if (node == nullptr) return;
+	postorder(node->left);
+	postorder(node->right);
+	cout<< node->data<<endl;
+
+	}
+
+    
+
+
 };
 
 int main() {
@@ -131,7 +155,8 @@ int main() {
     tree.root->left->right = new BinaryTree<int>::Node(5);
 
     cout << "Pre-Order Traversal: ";
-    tree.preOrderTraversal();
+    tree.inorder();
+    //tree.preOrderTraversal();
     cout << endl;
 
     return 0;
