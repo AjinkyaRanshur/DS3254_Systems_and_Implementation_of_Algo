@@ -66,74 +66,106 @@ public:
 
 };
 
+template <typename T>
 class Stack_LL{
 
 private:
-	T* arr;
-	int top;
-	int capacity;
-public:
-	Stack(T size){
-		capacity=size;
-		arr= new T[capacity];
-		top=0;
-	}
-	
-	~Stack(){
-		delete arr;
-	}
-	
-	void push(int x){
-		if(top>capacity){
-			cout<<"We have unfortunately Reached Maximum Capacity which is called Stack Overflow"<< endl;
-			return;
+	class Node{
+	public:
+		T data;
+		Node* next;
+		
+		Node(const T& value):data(value){
+			next=nullptr;
 		}
-		arr[top]=x;
-		top++;	
+	};
+
+	Node* head;
+	Node* tail;
+public:
+	Stack_LL(){head=tail=nullptr;}
+	
+	~Stack_LL(){
+		Node* temp;
+		while(head){
+		      temp=head;
+		      head=head->next;
+		      delete temp;
+		}
+	}
+	
+	void push(const T& value){
+		Node* newNode=new Node(value);
+		if(!head){
+		    head=tail=newNode;
+		}else{
+		      newNode->next=head;
+		      head=newNode;
+		}	
 	}
 
 
 	T topelem(){
-		T last_element=arr[top-1];
-		return last_element;
+		T value=head->data;
+		return value;
 	}
-	
 
 	T pop(){
-		T popped_element=arr[top-1];
-		arr[top-1]=0;
-		top--;
-		return popped_element;
+		Node* temp=head;
+		T value=temp->data;
+		head=head->next;
+		delete temp;
+		return value;
 	}
+
 
 	int size(){
-		return top;
+		Node* temp=head;
+		int _length=0;
+		while(temp){
+		    _length++;
+		    temp=temp->next;
+		}
+		return _length;
 	}
-
-	bool is_full(){
-		return top==capacity;
+	
+	void printlist() const{
+		Node* temp=head;
+		while(temp){
+	      		cout << temp->data<<"->";
+	      		temp=temp->next;
+		}
+		cout<<"Null"<<endl;
 	}
-
-	bool is_empty(){
-		return top==0 && arr[top]==0;
-	}
-
+	
+	
 
 };
 
-
 int main(){
-    Stack<int> s(5);
+    //Stack<int> s(5);
 
-    s.push(10);
-    s.push(20);
-    s.push(30);
+    //s.push(10);
+    //s.push(20);
+    //s.push(30);
 
-    cout << "Size of the stack: " << s.size() << endl;
-    cout << "Top element: " << s.topelem() << endl;
+    //cout << "Size of the stack: " << s.size() << endl;
+    //cout << "Top element: " << s.topelem() << endl;
 
-    cout << "Popped: " << s.pop() << endl;
-    cout << "Size after pop: " << s.size() << endl;
+    //cout << "Popped: " << s.pop() << endl;
+    //cout << "Size after pop: " << s.size() << endl;
+
+    Stack_LL <int> list;
+    list.push(10);
+    list.push(20);
+    list.push(30);
+    list.push(40);
+
+    list.printlist();
+    cout <<"Size of the list"<<list.size()<<endl;
+    cout <<"Top Element"<<list.topelem() <<endl;
+    cout <<"Popped" <<list.pop()<<endl;
+    cout<<"Size after Pop"<<list.size()<<endl;
 
     return 0;
 }
