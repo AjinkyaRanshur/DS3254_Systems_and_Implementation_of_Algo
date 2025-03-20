@@ -64,26 +64,26 @@ using namespace std;
 
 
 
-template <class T>
-class BinaryTree{
-	private:
-	  T _data;
-	  Node* _left;
-	  Node* _right;
-	  
-	  Node(const T& value):data(value){
-		_left=nullptr;
-		_right=nullptr;
-	}
 
-	//The node is visited first,followed by its left child and then its right child.This can be visualized as Root-left-Right 
-	void preorder(){
-	}
-	//void inorder(){}
-	//void postorder(){}
-	
-	};
 
-	Node* _root;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
