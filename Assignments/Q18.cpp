@@ -65,52 +65,77 @@ using namespace std;
 #include <iostream>
 using namespace std;
 
-struct Node {
-    int data;
-    Node* left;
-    Node* right;
+template <class T>
+class BinaryTree {
+public:
+    // Make Node public so that we can create nodes in main()
+    struct Node {
+        T data;
+        Node* left;
+        Node* right;
+        Node(T data) : data(data), left(nullptr), right(nullptr) {}
+    };
 
-    Node(int data) {
-        this->data = data;
-        this->left = nullptr;
-        this->right = nullptr;
+    Node* root;
+
+    // Constructor
+    BinaryTree() : root(nullptr) {}
+
+    // Destructor to free memory
+    ~BinaryTree() {
+        clear(root);
+    }
+
+    // Public function to start pre-order traversal
+    void preOrderTraversal() {
+        preOrderHelper(root);
+    }
+
+private:
+    // Helper function to free memory recursively
+    void clear(Node* node) {
+        if (node) {
+            clear(node->left);
+            clear(node->right);
+            delete node;
+        }
+    }
+
+    // Helper function for pre-order traversal
+    void preOrderHelper(Node* node) {
+        if (node == nullptr)
+            return;
+
+        // Visit the root node
+        cout << node->data << " ";
+        // Traverse the left subtree
+        preOrderHelper(node->left);
+        // Traverse the right subtree
+        preOrderHelper(node->right);
     }
 };
 
-void preOrderTraversal(Node* root) {
-    if (root == nullptr) return;
-
-    // Visit the root node
-    cout << root->data << " ";
-
-    // Traverse the left subtree
-    preOrderTraversal(root->left);
-
-    // Traverse the right subtree
-    preOrderTraversal(root->right);
-}
-
 int main() {
-    // Create the following binary tree
+    // Create the following binary tree:
     //       1
     //      / \
     //     2   3
     //    / \
     //   4   5
 
-    Node* root = new Node(1);
-    root->left = new Node(2);
-    root->right = new Node(3);
-    root->left->left = new Node(4);
-    root->left->right = new Node(5);
+    BinaryTree<int> tree;
+    tree.root = new BinaryTree<int>::Node(1);
+    tree.root->left = new BinaryTree<int>::Node(2);
+    tree.root->right = new BinaryTree<int>::Node(3);
+    tree.root->left->left = new BinaryTree<int>::Node(4);
+    tree.root->left->right = new BinaryTree<int>::Node(5);
 
     cout << "Pre-Order Traversal: ";
-    preOrderTraversal(root);
+    tree.preOrderTraversal();
     cout << endl;
 
     return 0;
 }
-
 
 
 
