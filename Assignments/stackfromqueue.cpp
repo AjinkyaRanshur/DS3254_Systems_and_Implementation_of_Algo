@@ -17,7 +17,10 @@ public:
     }
 
     ~Queue() {
-        delete[] arr;
+	if(arr){
+	   delete[] arr;
+	   arr=nullptr;
+	}
     }
 
     void enqueue(T x) {
@@ -73,7 +76,7 @@ public:
         }
         
         // Swap queues
-        Queue<T> temp = q1;
+        Queue<T>* temp = q1;
         q1 = q2;
         q2 = temp;
     }
