@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// Implementing a queue
+// Queue implementation
 template <typename T>
 class Queue {
 private:
     T* arr;
     int front, rear, capacity, count;
+
 public:
     Queue(int size) {
         capacity = size;
@@ -17,7 +18,10 @@ public:
     }
 
     ~Queue() {
-        delete[] arr;
+        if (arr) { // Prevent double deletion
+            delete[] arr;
+            arr = nullptr;
+        }
     }
 
     void enqueue(T x) {
@@ -58,44 +62,57 @@ public:
     }
 };
 
-// Implementing Stack using two Queues
+// Stack implementation using two queues
 template <typename T>
 class StackUsingQueues {
 private:
-    Queue<T> q1, q2;
+    Queue<T>* q1;
+    Queue<T>* q2;
+    int capacity;
+
 public:
-    StackUsingQueues(int size) : q1(size), q2(size) {}
+    StackUsingQueues(int size) {
+        capacity = size;
+        q1 = new Queue<T>(size);
+        q2 = new Queue<T>(size);
+    }
+
+    ~StackUsingQueues() {
+        delete q1;
+        delete q2;
+    }
 
     void push(T x) {
-        q2.enqueue(x);
-        while (!q1.is_empty()) {
-            q2.enqueue(q1.dequeue());
+        q2->enqueue(x);
+
+        while (!q1->is_empty()) {
+            q2->enqueue(q1->dequeue());
         }
-        
-        // Swap queues
-        Queue<T> temp = q1;
+
+        // Swap queue pointers
+        Queue<T>* temp = q1;
         q1 = q2;
         q2 = temp;
     }
 
     T pop() {
-        if (q1.is_empty()) {
+        if (q1->is_empty()) {
             cout << "Stack Underflow!" << endl;
             return -1;
         }
-        return q1.dequeue();
+        return q1->dequeue();
     }
 
     T top() {
-        if (q1.is_empty()) {
+        if (q1->is_empty()) {
             cout << "Stack is empty!" << endl;
             return -1;
         }
-        return q1.front_elem();
+        return q1->front_elem();
     }
 
     int size() {
-        return q1.size();
+        return q1->size();
     }
 };
 
