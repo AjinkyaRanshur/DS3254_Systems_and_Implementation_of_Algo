@@ -1,45 +1,45 @@
 
 
 1. Write Selection Sort function.  
-   a. Revise your program to read input from the keyboard.  
-   b. Revise your program to read input from a file. The name of the file should be taken as an argument from the command line.  
+   a. Revise your program to read input from the keyboard. done  
+   b. Revise your program to read input from a file. The name of the file should be taken as an argument from the command line. done  
 
-2. Implement Sorting Algorithms. Develop implementations for the following sorting algorithms: Selection Sort, Insertion Sort, and Merge Sort (and/or Quick Sort).  
+2. Implement Sorting Algorithms. Develop implementations for the following sorting algorithms: Selection Sort, Insertion Sort, and Merge Sort (and/or Quick Sort). done 
 
-3. Measure Execution Time. Record the execution time of each sorting algorithm for varying input sizes.  
+3. Measure Execution Time. Record the execution time of each sorting algorithm for varying input sizes.  Not done
 
-4. Compare Experimental and Theoretical Performance. Analyze the experimentally obtained execution times and compare them with the theoretical time complexity estimates for each algorithm.  
+4. Compare Experimental and Theoretical Performance. Analyze the experimentally obtained execution times and compare them with the theoretical time complexity estimates for each algorithm.Not Done  
 
-5. Determine Input Size Limits. Calculate the theoretical maximum input size each algorithm can handle within a 5-minute execution time limit.  
+5. Determine Input Size Limits. Calculate the theoretical maximum input size each algorithm can handle within a 5-minute execution time limit.Not  Done
 
-6. Identify Complexity Expressions. Derive the time complexity expressions for each algorithm based on the experimental data and compare them with their theoretical counterparts.  
+6. Identify Complexity Expressions. Derive the time complexity expressions for each algorithm based on the experimental data and compare them with their theoretical counterparts.Not Done  
 
-7. Find the specifications of your laptop/PC. How would you select a new laptop or PC if you were buying one?  
+7. Find the specifications of your laptop/PC. How would you select a new laptop or PC if you were buying one?  Done
 
-8. Implement insert and remove member functions in myArray.  
+8. Implement insert and remove member functions in myArray.  Dobe
 
-9. Implement a class for Polynomials.  
+9. Implement a class for Polynomials.  Done
 
-10. Implement a class for Matrices.  
+10. Implement a class for Matrices.  Done
 
-11. Complexity questions (3_lec.pdf).  
+11. Complexity questions (3_lec.pdf).Not Done
 
 12. Average case analysis for Quicksort: does the proof go through for the guess T(n) = Cn?  
 
-13. Implement prepend for LinkedList.  
+13. Implement prepend for LinkedList.  Done 
 
-14. Implement remaining functions of sequence ADT for LinkedList.  
+14. Implement remaining functions of sequence ADT for LinkedList.Done  
 
 15. Write C++ programs for:  
-   a. Stack ADT using Array/Vector.  
-   b. Stack ADT using LinkedList.  
-   c. Queue ADT using LinkedList.  
+   a. Stack ADT using Array/Vector.  Done 
+   b. Stack ADT using LinkedList.  Done 
+   c. Queue ADT using LinkedList.  Done 
 
-16. Is it possible to implement a Queue using Stacks?  
+16. Is it possible to implement a Queue using Stacks?  Done
 
 17. Implement Matrix class using:  
-   a. 1-D array  
-   b. Array/Vector of pairs for sparse matrix  
+   a. 1-D array  Not Done
+   b. Array/Vector of pairs for sparse matrix Not Done  
 
 18. Implement tree traversal methods for Binary Tree class.  
 

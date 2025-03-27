@@ -1,6 +1,3 @@
-#include <iostream>
-using namespace std;
-
 //Binary trees are fundamental data structures in computer science.
 //Traversing a binary tree means visiting all the nodes in a specific order.
 //Sure! Here's a visual breakdown of the main types of binary tree traversal using a sample tree:

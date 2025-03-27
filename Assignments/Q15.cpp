@@ -142,6 +142,97 @@ public:
 
 };
 
+
+template <typename T>
+class Queue_LL{
+
+private:
+	class Node{
+	public:
+		T data;
+		Node* next;
+		
+		Node(const T& value):data(value){
+			next=nullptr;
+		}
+	};
+
+	Node* head;
+	Node* tail;
+public:
+	Queue_LL(){head=tail=nullptr;}
+	
+	~Queue_LL(){
+		Node* temp;
+		while(head){
+		      temp=head;
+		      head=head->next;
+		      delete temp;
+		}
+	}
+	
+	bool is_empty(){
+		return head==nullptr;
+	}
+	
+	bool is_full(){
+		return false;	
+	}
+	
+	void enqueue(const T& value){
+		Node* newNode=new Node(value);
+		if(!head){
+		    head=tail=newNode;
+		}else{
+		      tail->next=newNode;
+		      tail=newNode;
+		}	
+	}
+
+
+	T first(){
+		T value=head->data;
+		return value;
+	}
+
+	T dequeue(){
+		if(is_empty()){
+			throw underflow_error("Queue underflow");
+		}
+		else{
+		Node* temp=head;
+		T value=temp->data;
+		head=head->next;
+		delete temp;
+		return value;
+		}
+	}
+
+
+	int size(){
+		Node* temp=head;
+		int _length=0;
+		while(temp){
+		    _length++;
+		    temp=temp->next;
+		}
+		return _length;
+	}
+	
+	void printlist() const{
+		Node* temp=head;
+		while(temp){
+	      		cout << temp->data<<"->";
+	      		temp=temp->next;
+		}
+		cout<<"Null"<<endl;
+	}
+	
+	
+
+};
+
+
 int main(){
     //Stack<int> s(5);
 
@@ -155,17 +246,18 @@ int main(){
     //cout << "Popped: " << s.pop() << endl;
     //cout << "Size after pop: " << s.size() << endl;
 
-    Stack_LL <int> list;
-    list.push(10);
-    list.push(20);
-    list.push(30);
-    list.push(40);
+    Queue_LL <int> list;
+    list.enqueue(10);
+    list.enqueue(20);
+    list.enqueue(30);
+    list.enqueue(40);
 
     list.printlist();
     cout <<"Size of the list"<<list.size()<<endl;
-    cout <<"Top Element"<<list.topelem() <<endl;
-    cout <<"Popped" <<list.pop()<<endl;
-    cout<<"Size after Pop"<<list.size()<<endl;
+    cout <<"Top Element"<<list.first() <<endl;
+    cout <<"Dequeued Element" <<list.dequeue()<<endl;
+    list.printlist();
+    cout<<"Size after Dequeueing"<<list.size()<<endl;
 
     return 0;
 }
